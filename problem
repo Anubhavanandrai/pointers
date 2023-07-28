@@ -1,0 +1,33 @@
+// Write a program to find out the greatest and the smallest among three numbers using pointers.
+
+
+#include <iostream>
+
+using namespace std;
+
+void Max_min(int *arr, int size){
+    
+    int max=0;
+    
+    for(int i=0;i<size;i++){
+        if((*(arr+i))>max)
+            max=(*(arr+i));
+    }
+    int min=(*arr);
+     for(int i=0;i<size;i++){
+         
+        if((*(arr+i))<min)
+            min=(*(arr+i));
+    }
+    
+    cout<<"max is: "<<max<<endl<<"min is: "<<min;
+}
+
+int main()
+{
+   int arr[5]={9,4,76,12,68};
+ 
+   Max_min(arr,5);
+
+    return 0;
+}
