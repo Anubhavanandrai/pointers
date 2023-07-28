@@ -1,8 +1,5 @@
-
 #include <iostream>
-
 using namespace std;
-
 int Sum_Arr(int *arr,int size){
     int sum=0,a=0;
     while(a<size){
@@ -11,7 +8,6 @@ int Sum_Arr(int *arr,int size){
     }
     return sum;
 }
-
 int main()
 {
     int size,i=0;
@@ -24,9 +20,7 @@ int main()
     while(i<size){
         cin>>arr[i];
         i++;
-    }
-    
+    } 
    cout<< Sum_Arr(arr,size);
-
-    return 0;
+   return 0;
 }
